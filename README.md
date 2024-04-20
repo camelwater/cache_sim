@@ -1,6 +1,7 @@
 ## Compiling and Executing
 
 compile with `gcc -g -o main main.c -lm`
+
 run with `./main`
 
 or run `./run.sh`
@@ -8,10 +9,13 @@ or run `./run.sh`
 ## Assumptions/Simplifications
 
 L1 latency: .5ns
+
 L2 latency: 5ns
+
 DRAM latency: 50ns
 
 L2 energy penalty: 5pJ
+
 DRAM energy penalty: 640pJ
 
  - The above latencies are total latencies:
