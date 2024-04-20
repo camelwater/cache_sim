@@ -1,0 +1,510 @@
+Tracefile: ./traces/008.espresso.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 807667 L1I-misses: 1701 L1I-evictions: 1459
+L1D-hits: 189630 L1D-misses: 1002 L1D-evictions: 644
+L2-hits: 61580 L2-misses: 800 L2-evictions: 18
+mean L1I energy usage: 602698.03 nJ, std dev: 21.964
+mean L1D energy usage: 448014.03 nJ, std dev: 21.964
+mean L2 energy usage: 977426.50 nJ, std dev: 38.448
+mean DRAM energy usage: 717811.24 nJ, std dev: 7151.585
+mean avg memory access time: 0.801 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 807667 L1I-misses: 1701 L1I-evictions: 1459
+L1D-hits: 189630 L1D-misses: 1002 L1D-evictions: 644
+L2-hits: 61582 L2-misses: 798 L2-evictions: 0
+mean L1I energy usage: 602664.50 nJ, std dev: 0.000
+mean L1D energy usage: 447980.50 nJ, std dev: 0.000
+mean L2 energy usage: 977368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 728500.00 nJ, std dev: 0.000
+mean avg memory access time: 0.801 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 807667 L1I-misses: 1701 L1I-evictions: 1459
+L1D-hits: 189630 L1D-misses: 1002 L1D-evictions: 644
+L2-hits: 61582 L2-misses: 798 L2-evictions: 0
+mean L1I energy usage: 602664.50 nJ, std dev: 0.000
+mean L1D energy usage: 447980.50 nJ, std dev: 0.000
+mean L2 energy usage: 977368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 728500.00 nJ, std dev: 0.000
+mean avg memory access time: 0.801 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/013.spice2g6.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 781572 L1I-misses: 2607 L1I-evictions: 2212
+L1D-hits: 215030 L1D-misses: 793 L1D-evictions: 455
+L2-hits: 75437 L2-misses: 976 L2-evictions: 0
+mean L1I energy usage: 633072.00 nJ, std dev: 0.000
+mean L1D energy usage: 490983.00 nJ, std dev: 0.000
+mean L2 energy usage: 1111873.80 nJ, std dev: 0.000
+mean DRAM energy usage: 820059.60 nJ, std dev: 0.000
+mean avg memory access time: 0.874 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 781572 L1I-misses: 2607 L1I-evictions: 2212
+L1D-hits: 215030 L1D-misses: 793 L1D-evictions: 455
+L2-hits: 75437 L2-misses: 976 L2-evictions: 0
+mean L1I energy usage: 633072.00 nJ, std dev: 0.000
+mean L1D energy usage: 490983.00 nJ, std dev: 0.000
+mean L2 energy usage: 1111873.80 nJ, std dev: 0.000
+mean DRAM energy usage: 820059.60 nJ, std dev: 0.000
+mean avg memory access time: 0.874 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 781572 L1I-misses: 2607 L1I-evictions: 2212
+L1D-hits: 215030 L1D-misses: 793 L1D-evictions: 455
+L2-hits: 75437 L2-misses: 976 L2-evictions: 0
+mean L1I energy usage: 633072.00 nJ, std dev: 0.000
+mean L1D energy usage: 490983.00 nJ, std dev: 0.000
+mean L2 energy usage: 1111873.80 nJ, std dev: 0.000
+mean DRAM energy usage: 820059.60 nJ, std dev: 0.000
+mean avg memory access time: 0.874 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/015.doduc.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 750974 L1I-misses: 4219 L1I-evictions: 3727
+L1D-hits: 241989 L1D-misses: 2818 L1D-evictions: 2308
+L2-hits: 95097 L2-misses: 2595 L2-evictions: 100
+mean L1I energy usage: 688067.20 nJ, std dev: 43.835
+mean L1D energy usage: 560470.70 nJ, std dev: 43.835
+mean L2 energy usage: 1326368.20 nJ, std dev: 72.650
+mean DRAM energy usage: 1024449.52 nJ, std dev: 6728.290
+mean avg memory access time: 0.999 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 750974 L1I-misses: 4219 L1I-evictions: 3727
+L1D-hits: 241991 L1D-misses: 2816 L1D-evictions: 2305
+L2-hits: 95104 L2-misses: 2586 L2-evictions: 25
+mean L1I energy usage: 687949.75 nJ, std dev: 51.505
+mean L1D energy usage: 560353.25 nJ, std dev: 51.505
+mean L2 energy usage: 1326168.40 nJ, std dev: 82.408
+mean DRAM energy usage: 1043312.80 nJ, std dev: 4764.632
+mean avg memory access time: 0.998 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 750974 L1I-misses: 4219 L1I-evictions: 3727
+L1D-hits: 241991 L1D-misses: 2816 L1D-evictions: 2304
+L2-hits: 95112 L2-misses: 2578 L2-evictions: 0
+mean L1I energy usage: 687760.75 nJ, std dev: 0.000
+mean L1D energy usage: 560164.25 nJ, std dev: 0.000
+mean L2 energy usage: 1325866.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1049476.00 nJ, std dev: 0.000
+mean avg memory access time: 0.998 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/022.li.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 739872 L1I-misses: 2382 L1I-evictions: 2046
+L1D-hits: 252918 L1D-misses: 4831 L1D-evictions: 4404
+L2-hits: 106201 L2-misses: 1367 L2-evictions: 100
+mean L1I energy usage: 690891.55 nJ, std dev: 90.453
+mean L1D energy usage: 569765.30 nJ, std dev: 90.453
+mean L2 energy usage: 1389396.40 nJ, std dev: 144.494
+mean DRAM energy usage: 998460.88 nJ, std dev: 21480.782
+mean avg memory access time: 1.011 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 739872 L1I-misses: 2382 L1I-evictions: 2046
+L1D-hits: 252922 L1D-misses: 4827 L1D-evictions: 4400
+L2-hits: 106248 L2-misses: 1320 L2-evictions: 0
+mean L1I energy usage: 690012.25 nJ, std dev: 0.000
+mean L1D energy usage: 568886.00 nJ, std dev: 0.000
+mean L2 energy usage: 1387985.20 nJ, std dev: 0.000
+mean DRAM energy usage: 1023838.00 nJ, std dev: 0.000
+mean avg memory access time: 1.009 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 739872 L1I-misses: 2382 L1I-evictions: 2046
+L1D-hits: 252922 L1D-misses: 4827 L1D-evictions: 4400
+L2-hits: 106248 L2-misses: 1320 L2-evictions: 0
+mean L1I energy usage: 690012.25 nJ, std dev: 0.000
+mean L1D energy usage: 568886.00 nJ, std dev: 0.000
+mean L2 energy usage: 1387985.20 nJ, std dev: 0.000
+mean DRAM energy usage: 1023838.00 nJ, std dev: 0.000
+mean avg memory access time: 1.009 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/023.eqntott.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 769542 L1I-misses: 217 L1I-evictions: 0
+L1D-hits: 228185 L1D-misses: 2056 L1D-evictions: 1544
+L2-hits: 78547 L2-misses: 1595 L2-evictions: 0
+mean L1I energy usage: 628901.75 nJ, std dev: 0.000
+mean L1D energy usage: 494022.25 nJ, std dev: 0.000
+mean L2 energy usage: 1131106.00 nJ, std dev: 0.000
+mean DRAM energy usage: 874883.20 nJ, std dev: 0.000
+mean avg memory access time: 0.873 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 769542 L1I-misses: 217 L1I-evictions: 0
+L1D-hits: 228185 L1D-misses: 2056 L1D-evictions: 1544
+L2-hits: 78547 L2-misses: 1595 L2-evictions: 0
+mean L1I energy usage: 628901.75 nJ, std dev: 0.000
+mean L1D energy usage: 494022.25 nJ, std dev: 0.000
+mean L2 energy usage: 1131106.00 nJ, std dev: 0.000
+mean DRAM energy usage: 874883.20 nJ, std dev: 0.000
+mean avg memory access time: 0.873 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 769542 L1I-misses: 217 L1I-evictions: 0
+L1D-hits: 228185 L1D-misses: 2056 L1D-evictions: 1544
+L2-hits: 78547 L2-misses: 1595 L2-evictions: 0
+mean L1I energy usage: 628901.75 nJ, std dev: 0.000
+mean L1D energy usage: 494022.25 nJ, std dev: 0.000
+mean L2 energy usage: 1131106.00 nJ, std dev: 0.000
+mean DRAM energy usage: 874883.20 nJ, std dev: 0.000
+mean avg memory access time: 0.873 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/026.compress.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 721093 L1I-misses: 123 L1I-evictions: 0
+L1D-hits: 265913 L1D-misses: 12871 L1D-evictions: 12359
+L2-hits: 150807 L2-misses: 6117 L2-evictions: 2021
+mean L1I energy usage: 797769.28 nJ, std dev: 346.401
+mean L1D energy usage: 687161.28 nJ, std dev: 346.401
+mean L2 energy usage: 1835328.10 nJ, std dev: 556.320
+mean DRAM energy usage: 2657149.24 nJ, std dev: 750702.293
+mean avg memory access time: 1.235 ns, std dev: 0.001
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 721093 L1I-misses: 123 L1I-evictions: 0
+L1D-hits: 265915 L1D-misses: 12869 L1D-evictions: 12357
+L2-hits: 150816 L2-misses: 6106 L2-evictions: 2010
+mean L1I energy usage: 799648.47 nJ, std dev: 386.927
+mean L1D energy usage: 689040.47 nJ, std dev: 386.927
+mean L2 energy usage: 1838330.50 nJ, std dev: 618.520
+mean DRAM energy usage: 5349442.36 nJ, std dev: 783573.892
+mean avg memory access time: 1.239 ns, std dev: 0.001
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 721093 L1I-misses: 123 L1I-evictions: 0
+L1D-hits: 265914 L1D-misses: 12870 L1D-evictions: 12358
+L2-hits: 150757 L2-misses: 6166 L2-evictions: 2070
+mean L1I energy usage: 800576.15 nJ, std dev: 321.717
+mean L1D energy usage: 689968.15 nJ, std dev: 321.717
+mean L2 energy usage: 1839816.40 nJ, std dev: 513.697
+mean DRAM energy usage: 8148213.04 nJ, std dev: 814840.465
+mean avg memory access time: 1.241 ns, std dev: 0.001
+
+----------------------------------------
+
+Tracefile: ./traces/034.mdljdp2.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 767423 L1I-misses: 1120 L1I-evictions: 709
+L1D-hits: 230020 L1D-misses: 1437 L1D-evictions: 1007
+L2-hits: 63836 L2-misses: 1423 L2-evictions: 11
+mean L1I energy usage: 606286.75 nJ, std dev: 10.311
+mean L1D energy usage: 472015.25 nJ, std dev: 10.311
+mean L2 energy usage: 1015040.20 nJ, std dev: 16.497
+mean DRAM energy usage: 9097297.60 nJ, std dev: 2032.457
+mean avg memory access time: 0.828 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 767423 L1I-misses: 1120 L1I-evictions: 709
+L1D-hits: 230020 L1D-misses: 1437 L1D-evictions: 1007
+L2-hits: 63838 L2-misses: 1421 L2-evictions: 0
+mean L1I energy usage: 606271.00 nJ, std dev: 0.000
+mean L1D energy usage: 471999.50 nJ, std dev: 0.000
+mean L2 energy usage: 1015015.00 nJ, std dev: 0.000
+mean DRAM energy usage: 9100584.40 nJ, std dev: 0.000
+mean avg memory access time: 0.828 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 767423 L1I-misses: 1120 L1I-evictions: 709
+L1D-hits: 230020 L1D-misses: 1437 L1D-evictions: 1007
+L2-hits: 63838 L2-misses: 1421 L2-evictions: 0
+mean L1I energy usage: 606271.00 nJ, std dev: 0.000
+mean L1D energy usage: 471999.50 nJ, std dev: 0.000
+mean L2 energy usage: 1015015.00 nJ, std dev: 0.000
+mean DRAM energy usage: 9100584.40 nJ, std dev: 0.000
+mean avg memory access time: 0.828 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/039.wave5.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 827135 L1I-misses: 465 L1I-evictions: 153
+L1D-hits: 172031 L1D-misses: 369 L1D-evictions: 82
+L2-hits: 48204 L2-misses: 743 L2-evictions: 0
+mean L1I energy usage: 577245.75 nJ, std dev: 0.000
+mean L1D energy usage: 413445.75 nJ, std dev: 0.000
+mean L2 energy usage: 856867.00 nJ, std dev: 0.000
+mean DRAM energy usage: 8985161.20 nJ, std dev: 0.000
+mean avg memory access time: 0.741 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 827135 L1I-misses: 465 L1I-evictions: 153
+L1D-hits: 172031 L1D-misses: 369 L1D-evictions: 82
+L2-hits: 48204 L2-misses: 743 L2-evictions: 0
+mean L1I energy usage: 577245.75 nJ, std dev: 0.000
+mean L1D energy usage: 413445.75 nJ, std dev: 0.000
+mean L2 energy usage: 856867.00 nJ, std dev: 0.000
+mean DRAM energy usage: 8985161.20 nJ, std dev: 0.000
+mean avg memory access time: 0.741 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 827135 L1I-misses: 465 L1I-evictions: 153
+L1D-hits: 172031 L1D-misses: 369 L1D-evictions: 82
+L2-hits: 48204 L2-misses: 743 L2-evictions: 0
+mean L1I energy usage: 577245.75 nJ, std dev: 0.000
+mean L1D energy usage: 413445.75 nJ, std dev: 0.000
+mean L2 energy usage: 856867.00 nJ, std dev: 0.000
+mean DRAM energy usage: 8985161.20 nJ, std dev: 0.000
+mean avg memory access time: 0.741 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/047.tomcatv.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 615456 L1I-misses: 88 L1I-evictions: 19
+L1D-hits: 374135 L1D-misses: 10321 L1D-evictions: 9809
+L2-hits: 123408 L2-misses: 8694 L2-evictions: 4598
+mean L1I energy usage: 705728.00 nJ, std dev: 179.437
+mean L1D energy usage: 647956.00 nJ, std dev: 179.437
+mean L2 energy usage: 1596298.00 nJ, std dev: 287.099
+mean DRAM energy usage: 12814542.40 nJ, std dev: 1865084.165
+mean avg memory access time: 1.104 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 615456 L1I-misses: 88 L1I-evictions: 19
+L1D-hits: 374135 L1D-misses: 10321 L1D-evictions: 9809
+L2-hits: 123454 L2-misses: 8648 L2-evictions: 4552
+mean L1I energy usage: 705109.25 nJ, std dev: 92.360
+mean L1D energy usage: 647337.25 nJ, std dev: 92.360
+mean L2 energy usage: 1595308.00 nJ, std dev: 147.776
+mean DRAM energy usage: 19270570.00 nJ, std dev: 1847815.934
+mean avg memory access time: 1.102 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 615456 L1I-misses: 88 L1I-evictions: 19
+L1D-hits: 374135 L1D-misses: 10321 L1D-evictions: 9809
+L2-hits: 123488 L2-misses: 8614 L2-evictions: 4518
+mean L1I energy usage: 704810.00 nJ, std dev: 134.172
+mean L1D energy usage: 647038.00 nJ, std dev: 134.172
+mean L2 energy usage: 1594829.20 nJ, std dev: 214.676
+mean DRAM energy usage: 25689193.60 nJ, std dev: 1840602.396
+mean avg memory access time: 1.102 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/048.ora.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 799417 L1I-misses: 354 L1I-evictions: 96
+L1D-hits: 199999 L1D-misses: 232 L1D-evictions: 42
+L2-hits: 58987 L2-misses: 542 L2-evictions: 0
+mean L1I energy usage: 592073.50 nJ, std dev: 0.000
+mean L1D energy usage: 442188.50 nJ, std dev: 0.000
+mean L2 energy usage: 948865.80 nJ, std dev: 0.000
+mean DRAM energy usage: 28346977.20 nJ, std dev: 0.000
+mean avg memory access time: 0.784 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 799417 L1I-misses: 354 L1I-evictions: 96
+L1D-hits: 199999 L1D-misses: 232 L1D-evictions: 42
+L2-hits: 58987 L2-misses: 542 L2-evictions: 0
+mean L1I energy usage: 592073.50 nJ, std dev: 0.000
+mean L1D energy usage: 442188.50 nJ, std dev: 0.000
+mean L2 energy usage: 948865.80 nJ, std dev: 0.000
+mean DRAM energy usage: 28346977.20 nJ, std dev: 0.000
+mean avg memory access time: 0.784 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 799417 L1I-misses: 354 L1I-evictions: 96
+L1D-hits: 199999 L1D-misses: 232 L1D-evictions: 42
+L2-hits: 58987 L2-misses: 542 L2-evictions: 0
+mean L1I energy usage: 592073.50 nJ, std dev: 0.000
+mean L1D energy usage: 442188.50 nJ, std dev: 0.000
+mean L2 energy usage: 948865.80 nJ, std dev: 0.000
+mean DRAM energy usage: 28346977.20 nJ, std dev: 0.000
+mean avg memory access time: 0.784 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/085.gcc.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 766807 L1I-misses: 12708 L1I-evictions: 12275
+L1D-hits: 214823 L1D-misses: 5662 L1D-evictions: 5165
+L2-hits: 94321 L2-misses: 3161 L2-evictions: 985
+mean L1I energy usage: 705736.32 nJ, std dev: 479.652
+mean L1D energy usage: 565978.82 nJ, std dev: 479.652
+mean L2 energy usage: 1343757.10 nJ, std dev: 758.849
+mean DRAM energy usage: 28906300.12 nJ, std dev: 81536.889
+mean avg memory access time: 1.022 ns, std dev: 0.001
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 766807 L1I-misses: 12708 L1I-evictions: 12275
+L1D-hits: 214983 L1D-misses: 5502 L1D-evictions: 4992
+L2-hits: 94814 L2-misses: 2509 L2-evictions: 154
+mean L1I energy usage: 690663.80 nJ, std dev: 182.094
+mean L1D energy usage: 550906.30 nJ, std dev: 182.094
+mean L2 energy usage: 1318799.20 nJ, std dev: 288.388
+mean DRAM energy usage: 28985504.08 nJ, std dev: 34460.830
+mean avg memory access time: 0.992 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 766807 L1I-misses: 12708 L1I-evictions: 12275
+L1D-hits: 214986 L1D-misses: 5499 L1D-evictions: 4988
+L2-hits: 94832 L2-misses: 2488 L2-evictions: 116
+mean L1I energy usage: 690063.50 nJ, std dev: 134.402
+mean L1D energy usage: 550306.00 nJ, std dev: 134.402
+mean L2 energy usage: 1317823.60 nJ, std dev: 216.943
+mean DRAM energy usage: 29088180.40 nJ, std dev: 28178.495
+mean avg memory access time: 0.990 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/089.su2cor.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 736700 L1I-misses: 481 L1I-evictions: 163
+L1D-hits: 259682 L1D-misses: 3137 L1D-evictions: 2625
+L2-hits: 114791 L2-misses: 2928 L2-evictions: 157
+mean L1I energy usage: 710845.90 nJ, std dev: 56.754
+mean L1D energy usage: 592255.40 nJ, std dev: 56.754
+mean L2 energy usage: 1478165.80 nJ, std dev: 95.485
+mean DRAM energy usage: 29148546.64 nJ, std dev: 30580.411
+mean avg memory access time: 1.053 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 736700 L1I-misses: 481 L1I-evictions: 163
+L1D-hits: 259684 L1D-misses: 3135 L1D-evictions: 2623
+L2-hits: 114801 L2-misses: 2916 L2-evictions: 38
+mean L1I energy usage: 710566.00 nJ, std dev: 0.000
+mean L1D energy usage: 591975.50 nJ, std dev: 0.000
+mean L2 energy usage: 1477705.00 nJ, std dev: 0.000
+mean DRAM energy usage: 29211862.00 nJ, std dev: 9796.668
+mean avg memory access time: 1.053 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 736700 L1I-misses: 481 L1I-evictions: 163
+L1D-hits: 259684 L1D-misses: 3135 L1D-evictions: 2623
+L2-hits: 114801 L2-misses: 2916 L2-evictions: 5
+mean L1I energy usage: 710566.00 nJ, std dev: 0.000
+mean L1D energy usage: 591975.50 nJ, std dev: 0.000
+mean L2 energy usage: 1477705.00 nJ, std dev: 0.000
+mean DRAM energy usage: 29229530.80 nJ, std dev: 1132.393
+mean avg memory access time: 1.053 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/090.hydro2d.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 747801 L1I-misses: 887 L1I-evictions: 487
+L1D-hits: 239371 L1D-misses: 11941 L1D-evictions: 11431
+L2-hits: 85869 L2-misses: 6446 L2-evictions: 2545
+mean L1I energy usage: 683646.90 nJ, std dev: 524.099
+mean L1D energy usage: 559302.90 nJ, std dev: 524.099
+mean L2 energy usage: 1292857.60 nJ, std dev: 840.662
+mean DRAM energy usage: 30823241.44 nJ, std dev: 762825.725
+mean avg memory access time: 0.993 ns, std dev: 0.001
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 747801 L1I-misses: 887 L1I-evictions: 487
+L1D-hits: 239374 L1D-misses: 11938 L1D-evictions: 11426
+L2-hits: 86071 L2-misses: 6241 L2-evictions: 2146
+mean L1I energy usage: 679761.82 nJ, std dev: 659.237
+mean L1D energy usage: 555417.82 nJ, std dev: 659.237
+mean L2 energy usage: 1286637.70 nJ, std dev: 1056.847
+mean DRAM energy usage: 33270122.92 nJ, std dev: 667714.114
+mean avg memory access time: 0.985 ns, std dev: 0.001
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 747801 L1I-misses: 887 L1I-evictions: 487
+L1D-hits: 239369 L1D-misses: 11943 L1D-evictions: 11438
+L2-hits: 86015 L2-misses: 6303 L2-evictions: 2207
+mean L1I energy usage: 680160.07 nJ, std dev: 401.015
+mean L1D energy usage: 555816.07 nJ, std dev: 401.015
+mean L2 energy usage: 1287285.70 nJ, std dev: 646.599
+mean DRAM energy usage: 35646155.32 nJ, std dev: 696981.206
+mean avg memory access time: 0.986 ns, std dev: 0.001
+
+----------------------------------------
+
+Tracefile: ./traces/093.nasa7.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 802508 L1I-misses: 463 L1I-evictions: 203
+L1D-hits: 194154 L1D-misses: 2875 L1D-evictions: 2363
+L2-hits: 76909 L2-misses: 2971 L2-evictions: 299
+mean L1I energy usage: 637627.75 nJ, std dev: 0.000
+mean L1D energy usage: 486142.25 nJ, std dev: 0.000
+mean L2 energy usage: 1130368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 36635900.80 nJ, std dev: 90443.282
+mean avg memory access time: 0.874 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 802508 L1I-misses: 463 L1I-evictions: 203
+L1D-hits: 194154 L1D-misses: 2875 L1D-evictions: 2363
+L2-hits: 76909 L2-misses: 2971 L2-evictions: 97
+mean L1I energy usage: 637627.75 nJ, std dev: 0.000
+mean L1D energy usage: 486142.25 nJ, std dev: 0.000
+mean L2 energy usage: 1130368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 36833022.40 nJ, std dev: 28311.235
+mean avg memory access time: 0.874 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 802508 L1I-misses: 463 L1I-evictions: 203
+L1D-hits: 194154 L1D-misses: 2875 L1D-evictions: 2363
+L2-hits: 76909 L2-misses: 2971 L2-evictions: 2
+mean L1I energy usage: 637627.75 nJ, std dev: 0.000
+mean L1D energy usage: 486142.25 nJ, std dev: 0.000
+mean L2 energy usage: 1130368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 36879376.00 nJ, std dev: 520.197
+mean avg memory access time: 0.874 ns, std dev: 0.000
+
+----------------------------------------
+
+Tracefile: ./traces/094.fpppp.din
+
+L2 ASSOCIATIVITY = 2
+L1I-hits: 692732 L1I-misses: 7768 L1I-evictions: 7311
+L1D-hits: 294110 L1D-misses: 5390 L1D-evictions: 4896
+L2-hits: 105169 L2-misses: 2358 L2-evictions: 452
+mean L1I energy usage: 688053.93 nJ, std dev: 197.678
+mean L1D energy usage: 587803.93 nJ, std dev: 197.678
+mean L2 energy usage: 1401317.50 nJ, std dev: 322.729
+mean DRAM energy usage: 37249143.88 nJ, std dev: 84312.292
+mean avg memory access time: 1.026 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 4
+L1I-hits: 692732 L1I-misses: 7768 L1I-evictions: 7311
+L1D-hits: 294124 L1D-misses: 5376 L1D-evictions: 4864
+L2-hits: 105309 L2-misses: 2207 L2-evictions: 18
+mean L1I energy usage: 685474.07 nJ, std dev: 29.884
+mean L1D energy usage: 585224.07 nJ, std dev: 29.884
+mean L2 energy usage: 1397143.30 nJ, std dev: 50.279
+mean DRAM energy usage: 37368496.12 nJ, std dev: 4008.580
+mean avg memory access time: 1.021 ns, std dev: 0.000
+
+L2 ASSOCIATIVITY = 8
+L1I-hits: 692732 L1I-misses: 7768 L1I-evictions: 7311
+L1D-hits: 294125 L1D-misses: 5375 L1D-evictions: 4863
+L2-hits: 105310 L2-misses: 2205 L2-evictions: 0
+mean L1I energy usage: 685416.25 nJ, std dev: 0.000
+mean L1D energy usage: 585166.25 nJ, std dev: 0.000
+mean L2 energy usage: 1397047.00 nJ, std dev: 0.000
+mean DRAM energy usage: 37374466.00 nJ, std dev: 0.000
+mean avg memory access time: 1.021 ns, std dev: 0.000
+
+----------------------------------------
+

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "ranges": "c",
+        "utility": "c",
+        "deque": "c",
+        "list": "c",
+        "vector": "c"
+    }
+}
