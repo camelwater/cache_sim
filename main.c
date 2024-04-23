@@ -81,8 +81,8 @@ const int REPETITIONS = 10;
 int main(int argc, char *argv[]){
     srand(time(NULL));
 
-    remove("./results_c2.txt");
-    if (! freopen("results_c2.txt", "w", stdout)) {
+    remove("./results_c.txt");
+    if (! freopen("results_c.txt", "w", stdout)) {
         fprintf(stderr, "Failed to create results.txt file");
         return 1;
     }
