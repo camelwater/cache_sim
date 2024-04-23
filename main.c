@@ -44,6 +44,7 @@ char *fileName;
 int L1I_hit, L1I_miss, L1I_eviction;
 int L1D_hit, L1D_miss, L1D_eviction;
 int L2_hit, L2_miss, L2_eviction;
+int DRAM_accesses;
 
 // Time stats
 double total_access_time, L1I_access_time, L1D_access_time, L2_access_time, DRAM_access_time, DRAM_writeback_time;
@@ -80,8 +81,8 @@ const int REPETITIONS = 10;
 int main(int argc, char *argv[]){
     srand(time(NULL));
 
-    remove("./results_c.txt");
-    if (! freopen("results_c.txt", "w", stdout)) {
+    remove("./results_c2.txt");
+    if (! freopen("results_c2.txt", "w", stdout)) {
         fprintf(stderr, "Failed to create results.txt file");
         return 1;
     }
@@ -150,6 +151,8 @@ int main(int argc, char *argv[]){
             printSummary("L1I", L1I_hit, L1I_miss, L1I_eviction);
             printSummary("L1D", L1D_hit, L1D_miss, L1D_eviction);
             printSummary("L2", L2_hit, L2_miss, L2_eviction);
+            printf("\nDRAM accesses: %d", DRAM_accesses);
+            printf("\nwrite back time: %0.3f, access time: %0.3f", DRAM_writeback_time, DRAM_access_time);
             // printf("\n----------------------------------------\nEnergy and timing stats:\n");
             double mean_L1I_energy = 0, mean_L1D_energy = 0, mean_L2_energy = 0, mean_DRAM_energy = 0;
             double L1I_sd = 0, L1D_sd = 0, L2_sd = 0, DRAM_sd = 0;
@@ -221,9 +224,10 @@ void setGlobalVariables(int associativity){
     L1I_hit = 0, L1I_miss = 0, L1I_eviction = 0;
     L1D_hit = 0, L1D_miss = 0, L1D_eviction = 0;
     L2_hit = 0, L2_miss = 0, L2_eviction = 0;
+    DRAM_accesses = 0;
 
     total_access_time = 0, num_accesses = 0;
-    L1I_access_time = 0, L1D_access_time = 0, L2_access_time = 0, DRAM_access_time = 0, DRAM_writeback_time;
+    L1I_access_time = 0, L1D_access_time = 0, L2_access_time = 0, DRAM_access_time = 0, DRAM_writeback_time = 0;
     L1I_energy = 0, L1D_energy = 0, L2_energy = 0, DRAM_energy = 0;
 }
 
@@ -411,13 +415,14 @@ void loadInstructionOrData(bool loadInstruction, char *cacheName, set *L1I, set 
 
             DRAM_access_time += 45;
             DRAM_energy += 640 * (int) pow(10, -12); // DRAM penalty
+            DRAM_accesses++;
 
             // read from DRAM, write to L2, write to L1
-            // DRAM_access_time += 45;
-            // if (loadInstruction) L1I_access_time += .5;
-            // else L1D_access_time += .5;
-            // DRAM_energy += 640 * (int) pow(10, -12); // DRAM penalty
+            // DRAM_access_time += 50;
+            // L2_access_time += 5;
+            // L1D_access_time += 0.5;
             // L2_energy += 5 * (int) pow(10, -12); // L2 penalty
+            // DRAM_energy += 640 * (int) pow(10, -12); // DRAM penalty
         }
     }
 }
@@ -506,13 +511,6 @@ void dataWrite(set *L1D, set *L2, char *address, char *data){
             L1D_eviction += copyInstructionBetweenCaches(L2, L1D, L2_location, setNumL2, setNumL1, tagL1, L1E, L1B, "L1");
 
             // DRAM_access_time += 45;
-            // DRAM_energy += 640 * (int) pow(10, -12); // DRAM penalty
-
-            // read from DRAM, write to L2, write to L1
-            // DRAM_access_time += 50;
-            // L2_access_time += 5;
-            // L1D_access_time += 0.5;
-            // L2_energy += 5 * (int) pow(10, -12); // L2 penalty
             // DRAM_energy += 640 * (int) pow(10, -12); // DRAM penalty
         }
 
@@ -670,20 +668,21 @@ int copyInstructionFromRamToL2Cache(int int_address, set *L1I, set *L1D, set *L2
 // write back only from L2->DRAM (asynchronously)
 void writeBack(set* cache, int setNum, int lineNum, char* writeBackData){
     if (cache) { // write back to L2 (evicted from L1)
-        memcpy(cache[setNum].lines[lineNum].data, writeBackData, 64);
-        cache[setNum].lines[lineNum].dirtyBit = 1;
+        // memcpy(cache[setNum].lines[lineNum].data, writeBackData, 64);
+        // cache[setNum].lines[lineNum].dirtyBit = 1;
         // L2_access_time += 5;
         // L2_energy += 5 * (int) pow(10, -12); // L2 penalty
     } else { //write back to disk (evicted from L2)
         DRAM_writeback_time += 45; // asynchronous
-        // DRAM_energy += 640 * (int) pow(10, -12); // DRAM penalty
+        DRAM_energy += 640 * (int) pow(10, -12); // DRAM penalty
+        DRAM_accesses++;
     }
 
 }
 
 void printSummary(char *cacheName, int hit, int miss, int eviction){
 
-    printf("\n%s-hits: %d %s-misses: %d %s-evictions: %d", cacheName, hit, cacheName, miss, cacheName, eviction);
+    printf("\n%s-accesses: %d %s-misses: %d %s-evictions: %d", cacheName, hit+miss, cacheName, miss, cacheName, eviction);
 
 }
 

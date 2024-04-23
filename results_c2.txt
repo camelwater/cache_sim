@@ -1,0 +1,465 @@
+Tracefile: ./traces/008.espresso.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 461
+write back time: 720.000, access time: 20025.000
+mean L1I energy usage: 852703.43 nJ, std dev: 19.487
+mean L1D energy usage: 698019.43 nJ, std dev: 19.487
+mean L2 energy usage: 1377437.30 nJ, std dev: 34.868
+mean DRAM energy usage: 1107077.48 nJ, std dev: 261.386
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 443
+write back time: 0.000, access time: 19935.000
+mean L1I energy usage: 852664.50 nJ, std dev: 0.000
+mean L1D energy usage: 697980.50 nJ, std dev: 0.000
+mean L2 energy usage: 1377368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1104308.00 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 443
+write back time: 0.000, access time: 19935.000
+mean L1I energy usage: 852664.50 nJ, std dev: 0.000
+mean L1D energy usage: 697980.50 nJ, std dev: 0.000
+mean L2 energy usage: 1377368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1104308.00 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/013.spice2g6.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 671
+write back time: 0.000, access time: 30195.000
+mean L1I energy usage: 883072.50 nJ, std dev: 0.000
+mean L1D energy usage: 740983.50 nJ, std dev: 0.000
+mean L2 energy usage: 1511874.60 nJ, std dev: 0.000
+mean DRAM energy usage: 1195868.40 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 671
+write back time: 0.000, access time: 30195.000
+mean L1I energy usage: 883072.50 nJ, std dev: 0.000
+mean L1D energy usage: 740983.50 nJ, std dev: 0.000
+mean L2 energy usage: 1511874.60 nJ, std dev: 0.000
+mean DRAM energy usage: 1195868.40 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 671
+write back time: 0.000, access time: 30195.000
+mean L1I energy usage: 883072.50 nJ, std dev: 0.000
+mean L1D energy usage: 740983.50 nJ, std dev: 0.000
+mean L2 energy usage: 1511874.60 nJ, std dev: 0.000
+mean DRAM energy usage: 1195868.40 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/015.doduc.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 1327
+write back time: 765.000, access time: 58950.000
+mean L1I energy usage: 938127.50 nJ, std dev: 94.350
+mean L1D energy usage: 810531.00 nJ, std dev: 94.350
+mean L2 energy usage: 1726469.00 nJ, std dev: 161.499
+mean DRAM energy usage: 1390173.20 nJ, std dev: 799.544
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 1318
+write back time: 540.000, access time: 58770.000
+mean L1I energy usage: 937974.50 nJ, std dev: 39.295
+mean L1D energy usage: 810378.00 nJ, std dev: 39.295
+mean L2 energy usage: 1726208.00 nJ, std dev: 62.871
+mean DRAM energy usage: 1388459.60 nJ, std dev: 318.940
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 1296
+write back time: 0.000, access time: 58320.000
+mean L1I energy usage: 937760.75 nJ, std dev: 0.000
+mean L1D energy usage: 810164.25 nJ, std dev: 0.000
+mean L2 energy usage: 1725866.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1384964.00 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/022.li.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 668
+write back time: 3105.000, access time: 26955.000
+mean L1I energy usage: 940995.35 nJ, std dev: 117.799
+mean L1D energy usage: 819869.10 nJ, std dev: 117.799
+mean L2 energy usage: 1789561.40 nJ, std dev: 187.321
+mean DRAM energy usage: 1302910.16 nJ, std dev: 1951.713
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 552
+write back time: 0.000, access time: 24840.000
+mean L1I energy usage: 940013.00 nJ, std dev: 0.000
+mean L1D energy usage: 818886.75 nJ, std dev: 0.000
+mean L2 energy usage: 1787986.40 nJ, std dev: 0.000
+mean DRAM energy usage: 1286607.20 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 552
+write back time: 0.000, access time: 24840.000
+mean L1I energy usage: 940013.00 nJ, std dev: 0.000
+mean L1D energy usage: 818886.75 nJ, std dev: 0.000
+mean L2 energy usage: 1787986.40 nJ, std dev: 0.000
+mean DRAM energy usage: 1286607.20 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/023.eqntott.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 273
+write back time: 0.000, access time: 12285.000
+mean L1I energy usage: 878901.75 nJ, std dev: 0.000
+mean L1D energy usage: 744022.25 nJ, std dev: 0.000
+mean L2 energy usage: 1531106.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1137651.20 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 273
+write back time: 0.000, access time: 12285.000
+mean L1I energy usage: 878901.75 nJ, std dev: 0.000
+mean L1D energy usage: 744022.25 nJ, std dev: 0.000
+mean L2 energy usage: 1531106.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1137651.20 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 273
+write back time: 0.000, access time: 12285.000
+mean L1I energy usage: 878901.75 nJ, std dev: 0.000
+mean L1D energy usage: 744022.25 nJ, std dev: 0.000
+mean L2 energy usage: 1531106.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1137651.20 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/026.compress.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 2464
+write back time: 82215.000, access time: 28665.000
+mean L1I energy usage: 1047814.05 nJ, std dev: 385.541
+mean L1D energy usage: 937206.05 nJ, std dev: 385.541
+mean L2 energy usage: 2235399.20 nJ, std dev: 614.612
+mean DRAM energy usage: 1743076.88 nJ, std dev: 5634.225
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 2537
+write back time: 82890.000, access time: 31275.000
+mean L1I energy usage: 1049422.12 nJ, std dev: 356.384
+mean L1D energy usage: 938814.12 nJ, std dev: 356.384
+mean L2 energy usage: 2237970.50 nJ, std dev: 569.000
+mean DRAM energy usage: 1764600.20 nJ, std dev: 6273.052
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 2701
+write back time: 87660.000, access time: 33885.000
+mean L1I energy usage: 1050636.45 nJ, std dev: 372.415
+mean L1D energy usage: 940028.45 nJ, std dev: 372.415
+mean L2 energy usage: 2239911.80 nJ, std dev: 597.112
+mean DRAM energy usage: 1786717.52 nJ, std dev: 6083.337
+
+
+----------------------------------------
+
+Tracefile: ./traces/034.mdljdp2.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 779
+write back time: 405.000, access time: 34650.000
+mean L1I energy usage: 856284.50 nJ, std dev: 11.023
+mean L1D energy usage: 722013.00 nJ, std dev: 11.023
+mean L2 energy usage: 1415036.60 nJ, std dev: 17.636
+mean DRAM energy usage: 1174367.60 nJ, std dev: 314.995
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 769
+write back time: 0.000, access time: 34605.000
+mean L1I energy usage: 856271.00 nJ, std dev: 0.000
+mean L1D energy usage: 721999.50 nJ, std dev: 0.000
+mean L2 energy usage: 1415015.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1173352.40 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 769
+write back time: 0.000, access time: 34605.000
+mean L1I energy usage: 856271.00 nJ, std dev: 0.000
+mean L1D energy usage: 721999.50 nJ, std dev: 0.000
+mean L2 energy usage: 1415015.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1173352.40 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/039.wave5.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 454
+write back time: 0.000, access time: 20430.000
+mean L1I energy usage: 827245.75 nJ, std dev: 0.000
+mean L1D energy usage: 663445.75 nJ, std dev: 0.000
+mean L2 energy usage: 1256867.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1057929.20 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 454
+write back time: 0.000, access time: 20430.000
+mean L1I energy usage: 827245.75 nJ, std dev: 0.000
+mean L1D energy usage: 663445.75 nJ, std dev: 0.000
+mean L2 energy usage: 1256867.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1057929.20 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 454
+write back time: 0.000, access time: 20430.000
+mean L1I energy usage: 827245.75 nJ, std dev: 0.000
+mean L1D energy usage: 663445.75 nJ, std dev: 0.000
+mean L2 energy usage: 1256867.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1057929.20 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/047.tomcatv.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 4721
+write back time: 203355.000, access time: 9090.000
+mean L1I energy usage: 955791.00 nJ, std dev: 118.547
+mean L1D energy usage: 898019.00 nJ, std dev: 118.547
+mean L2 energy usage: 1996398.80 nJ, std dev: 189.676
+mean DRAM energy usage: 1963505.60 nJ, std dev: 1609.421
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 4627
+write back time: 200700.000, access time: 7515.000
+mean L1I energy usage: 955206.00 nJ, std dev: 155.494
+mean L1D energy usage: 897434.00 nJ, std dev: 155.494
+mean L2 energy usage: 1995462.80 nJ, std dev: 248.791
+mean DRAM energy usage: 1951942.40 nJ, std dev: 2067.717
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 4640
+write back time: 200655.000, access time: 8145.000
+mean L1I energy usage: 954945.00 nJ, std dev: 129.956
+mean L1D energy usage: 897173.00 nJ, std dev: 129.956
+mean L2 energy usage: 1995045.20 nJ, std dev: 207.929
+mean DRAM energy usage: 1947680.00 nJ, std dev: 1414.099
+
+
+----------------------------------------
+
+Tracefile: ./traces/048.ora.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 364
+write back time: 0.000, access time: 16380.000
+mean L1I energy usage: 842074.00 nJ, std dev: 0.000
+mean L1D energy usage: 692189.00 nJ, std dev: 0.000
+mean L2 energy usage: 1348866.60 nJ, std dev: 0.000
+mean DRAM energy usage: 1079826.00 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 364
+write back time: 0.000, access time: 16380.000
+mean L1I energy usage: 842074.00 nJ, std dev: 0.000
+mean L1D energy usage: 692189.00 nJ, std dev: 0.000
+mean L2 energy usage: 1348866.60 nJ, std dev: 0.000
+mean DRAM energy usage: 1079826.00 nJ, std dev: 0.000
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 364
+write back time: 0.000, access time: 16380.000
+mean L1I energy usage: 842074.00 nJ, std dev: 0.000
+mean L1D energy usage: 692189.00 nJ, std dev: 0.000
+mean L2 energy usage: 1348866.60 nJ, std dev: 0.000
+mean DRAM energy usage: 1079826.00 nJ, std dev: 0.000
+
+
+----------------------------------------
+
+Tracefile: ./traces/085.gcc.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 2024
+write back time: 8415.000, access time: 82665.000
+mean L1I energy usage: 955599.53 nJ, std dev: 344.024
+mean L1D energy usage: 815842.03 nJ, std dev: 344.024
+mean L2 energy usage: 1743539.30 nJ, std dev: 560.969
+mean DRAM energy usage: 1510193.24 nJ, std dev: 2719.052
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 1273
+write back time: 3735.000, access time: 53550.000
+mean L1I energy usage: 940627.57 nJ, std dev: 184.088
+mean L1D energy usage: 800870.07 nJ, std dev: 184.088
+mean L2 energy usage: 1718740.70 nJ, std dev: 297.465
+mean DRAM energy usage: 1376164.52 nJ, std dev: 1967.236
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 1241
+write back time: 3060.000, access time: 52785.000
+mean L1I energy usage: 940114.57 nJ, std dev: 104.624
+mean L1D energy usage: 800357.07 nJ, std dev: 104.624
+mean L2 energy usage: 1717909.10 nJ, std dev: 171.116
+mean DRAM energy usage: 1369886.12 nJ, std dev: 1298.572
+
+
+----------------------------------------
+
+Tracefile: ./traces/089.su2cor.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 603
+write back time: 3690.000, access time: 23445.000
+mean L1I energy usage: 960820.47 nJ, std dev: 67.937
+mean L1D energy usage: 842229.97 nJ, std dev: 67.937
+mean L2 energy usage: 1878123.50 nJ, std dev: 112.644
+mean DRAM energy usage: 1328019.56 nJ, std dev: 884.790
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 533
+write back time: 1170.000, access time: 22815.000
+mean L1I energy usage: 960566.00 nJ, std dev: 0.000
+mean L1D energy usage: 841975.50 nJ, std dev: 0.000
+mean L2 energy usage: 1877705.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1318439.60 nJ, std dev: 423.272
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 511
+write back time: 180.000, access time: 22815.000
+mean L1I energy usage: 960566.00 nJ, std dev: 0.000
+mean L1D energy usage: 841975.50 nJ, std dev: 0.000
+mean L2 energy usage: 1877705.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1315487.60 nJ, std dev: 150.340
+
+
+----------------------------------------
+
+Tracefile: ./traces/090.hydro2d.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 3562
+write back time: 82890.000, access time: 77400.000
+mean L1I energy usage: 933920.72 nJ, std dev: 471.346
+mean L1D energy usage: 809576.72 nJ, std dev: 471.346
+mean L2 energy usage: 1693294.10 nJ, std dev: 754.825
+mean DRAM energy usage: 1712463.56 nJ, std dev: 5544.586
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 3153
+write back time: 71550.000, access time: 70335.000
+mean L1I energy usage: 929629.53 nJ, std dev: 459.058
+mean L1D energy usage: 805285.53 nJ, std dev: 459.058
+mean L2 energy usage: 1686432.50 nJ, std dev: 735.375
+mean DRAM energy usage: 1643879.24 nJ, std dev: 5988.389
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 3352
+write back time: 78030.000, access time: 72810.000
+mean L1I energy usage: 930388.45 nJ, std dev: 524.870
+mean L1D energy usage: 806044.45 nJ, std dev: 524.870
+mean L2 energy usage: 1687659.20 nJ, std dev: 841.168
+mean DRAM energy usage: 1657722.32 nJ, std dev: 8052.428
+
+
+----------------------------------------
+
+Tracefile: ./traces/093.nasa7.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 525
+write back time: 9315.000, access time: 14310.000
+mean L1I energy usage: 887627.75 nJ, std dev: 0.000
+mean L1D energy usage: 736142.25 nJ, std dev: 0.000
+mean L2 energy usage: 1530368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1175480.00 nJ, std dev: 725.737
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 391
+write back time: 3285.000, access time: 14310.000
+mean L1I energy usage: 887627.75 nJ, std dev: 0.000
+mean L1D energy usage: 736142.25 nJ, std dev: 0.000
+mean L2 energy usage: 1530368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1154643.20 nJ, std dev: 614.494
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 320
+write back time: 90.000, access time: 14310.000
+mean L1I energy usage: 887627.75 nJ, std dev: 0.000
+mean L1D energy usage: 736142.25 nJ, std dev: 0.000
+mean L2 energy usage: 1530368.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1144995.20 nJ, std dev: 65.989
+
+
+----------------------------------------
+
+Tracefile: ./traces/094.fpppp.din
+
+L2 ASSOCIATIVITY = 2
+DRAM accesses: 1148
+write back time: 9315.000, access time: 42345.000
+mean L1I energy usage: 938239.55 nJ, std dev: 189.289
+mean L1D energy usage: 837989.55 nJ, std dev: 189.289
+mean L2 energy usage: 1801617.20 nJ, std dev: 305.385
+mean DRAM energy usage: 1386165.68 nJ, std dev: 2039.543
+
+
+L2 ASSOCIATIVITY = 4
+DRAM accesses: 825
+write back time: 360.000, access time: 36765.000
+mean L1I energy usage: 935490.05 nJ, std dev: 52.928
+mean L1D energy usage: 835240.05 nJ, std dev: 52.928
+mean L2 energy usage: 1797169.40 nJ, std dev: 86.812
+mean DRAM energy usage: 1336075.28 nJ, std dev: 654.271
+
+
+L2 ASSOCIATIVITY = 8
+DRAM accesses: 817
+write back time: 0.000, access time: 36765.000
+mean L1I energy usage: 935416.25 nJ, std dev: 0.000
+mean L1D energy usage: 835166.25 nJ, std dev: 0.000
+mean L2 energy usage: 1797047.00 nJ, std dev: 0.000
+mean DRAM energy usage: 1334114.00 nJ, std dev: 0.000
+
+
+----------------------------------------
+

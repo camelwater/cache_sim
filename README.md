@@ -25,12 +25,12 @@ DRAM energy penalty: 640pJ
     - Therefore, they do not contribute to the avg access time calculation.
     - They do contribute to DRAM active energy consumption.
     - These asynchronous writes to DRAM do not interfere with DRAM reads. In the simulator, they can happen concurrently, but the energy behavior essentially functions as asynchronous writes to DRAM waiting for the read to finish before writing back. So an asynchronous write back to DRAM that is happening at the same time as a read from DRAM will mean the DRAM is active for 90ns (45ns * 2) to complete these two operations, but the latency from the processor is still 45ns for just the read (as mentioned before, asynchronous writes do not stall the processor).
- - Writes do not incur energy penalties:
+ - Writes to caches do not incur energy penalties:
     - An L2 hit on a write operation takes 5ns, but it does not incur the 5pJ penalty that an L2 hit on a read operation would. This is because we do not have to bring the line from L2 to L1 in a write -- we can write to L1 directly, whereas in a read, we would have to propogate the line from L2 to L1. 
     - The same applies to L2 misses on write operations. It takes 5ns because we can write directly to the lines in L2 and L1 instead of having to bring the data from DRAM. Thus, we do not incur the L2 penalty for the same reason stated above nor do we incur the DRAM penalty (because we avoid accessing DRAM entirely).
  - Evictions and write backs are accounted for in the latencies and penalties (they do not incur additional penalties). 
     - We do not distinguish between an L2 miss that does not result in a write back and an L2 miss that does in terms of latency and energy calculations for the caches.
-    - Write backs to DRAM contribute to DRAM's active energy, but they do not incur the 640pJ DRAM penalty.
+    - However, write backs to DRAM contribute to DRAM's active energy, and they incur the 640pJ penalty.
     - Maintaining inclusivity through back invalidation from L2 to L1 also does not incur additional latency.
 
 ## Implementation Details
