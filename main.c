@@ -152,7 +152,7 @@ int main(int argc, char *argv[]){
             printSummary("L1D", L1D_hit, L1D_miss, L1D_eviction);
             printSummary("L2", L2_hit, L2_miss, L2_eviction);
             printf("\nDRAM accesses: %d", DRAM_accesses);
-            printf("\nwrite back time: %0.3f, access time: %0.3f", DRAM_writeback_time, DRAM_access_time);
+            // printf("\nwrite back time: %0.3f, access time: %0.3f", DRAM_writeback_time, DRAM_access_time);
             // printf("\n----------------------------------------\nEnergy and timing stats:\n");
             double mean_L1I_energy = 0, mean_L1D_energy = 0, mean_L2_energy = 0, mean_DRAM_energy = 0;
             double L1I_sd = 0, L1D_sd = 0, L2_sd = 0, DRAM_sd = 0;
