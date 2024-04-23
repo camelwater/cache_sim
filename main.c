@@ -74,6 +74,9 @@ char* traceFiles[15] = {
                         "./traces/094.fpppp.din",
                         };
 
+const int REPETITIONS = 10;
+
+
 int main(int argc, char *argv[]){
     srand(time(NULL));
 
@@ -82,17 +85,17 @@ int main(int argc, char *argv[]){
         fprintf(stderr, "Failed to create results.txt file");
         return 1;
     }
-    int repetitions = 10;
     for (int f = 0; f < 15; f++) {
         fileName = traceFiles[f];
         printf("Tracefile: %s\n", fileName);
         for (int ass = 0; ass < 3; ass++) {
-            double L1I_energies[repetitions];
-            double L1D_energies[repetitions];
-            double L2_energies[repetitions];
-            double DRAM_energies[repetitions];
-            double access_times[repetitions];
-            for (int iter = 0; iter < repetitions; iter++) {
+            double L1I_energies[REPETITIONS];
+            double L1D_energies[REPETITIONS];
+            double L2_energies[REPETITIONS];
+            double DRAM_energies[REPETITIONS];
+            double access_times[REPETITIONS];
+            double total_access_times[REPETITIONS];
+            for (int iter = 0; iter < REPETITIONS; iter++) {
                 setGlobalVariables(assocs[ass]);
 
                 set L1D[L1S];
@@ -109,7 +112,8 @@ int main(int argc, char *argv[]){
 
                 /////////////////////////////////////////////////////////////////////////////////////////////
 
-                total_access_time = L1I_access_time + L1D_access_time + L2_access_time + DRAM_access_time;
+                total_access_time = 0.5 * num_accesses;
+                total_access_time += L1I_access_time + L1D_access_time + L2_access_time + DRAM_access_time;
                 double avg_access_time = total_access_time / num_accesses;
                 
                 //convert picojoules to nanojoules
@@ -135,6 +139,7 @@ int main(int argc, char *argv[]){
                 L2_energies[iter] = L2_energy;
                 DRAM_energies[iter] = DRAM_energy;
                 access_times[iter] = avg_access_time;
+                total_access_times[iter] = total_access_time;
 
                 cleanUp(L1I, L1D, L2);
             }
@@ -150,38 +155,45 @@ int main(int argc, char *argv[]){
             double L1I_sd = 0, L1D_sd = 0, L2_sd = 0, DRAM_sd = 0;
             double mean_access_time = 0;
             double access_time_sd = 0;
-            for (i = 0; i < repetitions; i++) {
+            double mean_total_access_time = 0;
+            double total_access_time_sd = 0;
+            for (i = 0; i < REPETITIONS; i++) {
                 mean_L1I_energy += L1I_energies[i];
                 mean_L1D_energy += L1D_energies[i];
                 mean_L2_energy += L2_energies[i];
                 mean_DRAM_energy += DRAM_energies[i];
                 mean_access_time += access_times[i];
+                mean_total_access_time += total_access_times[i];
             }
-            mean_L1I_energy /= repetitions;
-            mean_L1D_energy /= repetitions;
-            mean_L2_energy /= repetitions;
-            mean_DRAM_energy /= repetitions;
-            mean_access_time /= repetitions;
+            mean_L1I_energy /= REPETITIONS;
+            mean_L1D_energy /= REPETITIONS;
+            mean_L2_energy /= REPETITIONS;
+            mean_DRAM_energy /= REPETITIONS;
+            mean_access_time /= REPETITIONS;
+            mean_total_access_time /= REPETITIONS;
 
-            for (i = 0; i < repetitions; i++) {
+            for (i = 0; i < REPETITIONS; i++) {
                 L1I_sd += pow(L1I_energies[i] - mean_L1I_energy, 2);
                 L1D_sd += pow(L1D_energies[i] - mean_L1D_energy, 2);
                 L2_sd += pow(L2_energies[i] - mean_L2_energy, 2);
                 DRAM_sd += pow(DRAM_energies[i] - mean_DRAM_energy, 2);
                 access_time_sd += pow(access_times[i] - mean_access_time, 2);
+                total_access_time_sd += pow(total_access_times[i] - mean_total_access_time, 2);
             }
 
-            L1I_sd = sqrt(L1I_sd / repetitions);
-            L1D_sd = sqrt(L1D_sd / repetitions);
-            L2_sd = sqrt(L2_sd / repetitions);
-            DRAM_sd = sqrt(DRAM_sd / repetitions);
-            access_time_sd = sqrt(access_time_sd / repetitions);
+            L1I_sd = sqrt(L1I_sd / REPETITIONS);
+            L1D_sd = sqrt(L1D_sd / REPETITIONS);
+            L2_sd = sqrt(L2_sd / REPETITIONS);
+            DRAM_sd = sqrt(DRAM_sd / REPETITIONS);
+            access_time_sd = sqrt(access_time_sd / REPETITIONS);
+            total_access_time_sd = sqrt(total_access_time_sd / REPETITIONS);
 
             printf("\nmean L1I energy usage: %0.2f nJ, std dev: %0.3f\n", mean_L1I_energy, L1I_sd);
             printf("mean L1D energy usage: %0.2f nJ, std dev: %0.3f\n", mean_L1D_energy, L1D_sd);
             printf("mean L2 energy usage: %0.2f nJ, std dev: %0.3f\n", mean_L2_energy, L2_sd);
             printf("mean DRAM energy usage: %0.2f nJ, std dev: %0.3f\n", mean_DRAM_energy, DRAM_sd);
-            printf("mean avg memory access time: %0.3f ns, std dev: %0.3f", mean_access_time, access_time_sd);
+            printf("mean operation memory access time: %0.3f ns, std dev: %0.3f\n", mean_access_time, access_time_sd);
+            printf("mean total memory access time: %0.3f ns, std dev: %0.3f", mean_total_access_time, total_access_time_sd);
             printf("\n");
         }
         printf("\n----------------------------------------\n\n");
